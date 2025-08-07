@@ -45,6 +45,12 @@ layers.Activation("relu"),
 layers.Dense(1)
 ])
 
+A neuron is the basic unit of a neural network.
+It receives input(s), applies a weight and bias, and passes the result through an activation function to produce an output.
+
+Think of it like:
+output = activation(weight \* input + bias)
+
 ⚖️ Normalization:
 Normalization is a technique to standardize input or activations so that the neural network trains faster and more reliably.
 
