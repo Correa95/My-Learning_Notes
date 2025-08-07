@@ -4,14 +4,22 @@
    concrete = pd.read_csv('../input/dl-course-data/concrete.csv')
    concrete.head()
 
+# This is the libraries
+
 2. from tensorflow import keras
+   from tensorflow.keras import layers
 
-# YOUR CODE HERE
+# This is the model creation using the sequential API
 
-from tensorflow.keras import layers
 model = keras.Sequential([
 layers.Dense(unit=512, activation= "relu", input_shape = input_shape),
+
+# input_shape means amount of input OR features
+
 layers.Dense(units=512, activation= "relu", input_shape = input_shape),
+
+# "relu" is and activation function use when there is non linearity in the data
+
 layers.Dense(units=512, activation= "relu", input_shape = input_shape)
 layers.Dess(units=1)
 ])
