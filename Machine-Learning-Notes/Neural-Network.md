@@ -16,10 +16,10 @@ layers.Dense(unit=512, activation= "relu", input_shape = input_shape),
 
 # input_shape means amount of input OR features
 
-layers.Dense(units=512, activation= "relu", input_shape = input_shape),
+layers.Dense(units=512, activation= "relu", ),
 
-# "relu" is and activation function use when there is non linearity in the data
+# "relu" is and activation function use when the data is nonlinear
 
-layers.Dense(units=512, activation= "relu", input_shape = input_shape)
-layers.Dess(units=1)
+layers.Dense(units=512, activation= "relu", )
+layers.Dense(units=1)
 ])
