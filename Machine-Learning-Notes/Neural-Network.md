@@ -4,7 +4,7 @@
    concrete = pd.read_csv('../input/dl-course-data/concrete.csv')
    concrete.head()
 
-# This is the libraries
+# This is the imported libraries
 
 2. from tensorflow import keras
    from tensorflow.keras import layers
@@ -12,7 +12,7 @@
 # This is the model creation using the sequential API
 
 model = keras.Sequential([
-layers.Dense(unit=512, activation= "relu", input_shape = input_shape),
+layers.Dense(units=512, activation= "relu", input_shape = input_shape),
 
 # input_shape means amount of input OR features
 
