@@ -33,7 +33,9 @@ layers.Activation('relu')
 This is completely equivalent to the ordinary way: layers.Dense(units=8, activation='relu').
 Rewrite the following model so that each activation is in its own Activation layer.
 model = keras.Sequential([
-layers.Dense(32, activation='relu', input_shape=[8]),
-layers.Dense(32, activation='relu'),
-layers.Dense(1),
+layers.Dense(32, input_shape=[8]),
+layers.Activation("relu"),
+layers.Dense(32, input_shape=[8]),
+layers.Activation("relu"),
+layers.Dense(1)
 ])
