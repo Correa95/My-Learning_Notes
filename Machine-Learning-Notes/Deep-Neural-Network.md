@@ -45,6 +45,7 @@ layers.Activation("relu"),
 layers.Dense(1)
 ])
 
+🧠 Neuron:
 A neuron is the basic unit of a neural network.
 It receives input(s), applies a weight and bias, and passes the result through an activation function to produce an output.
 
