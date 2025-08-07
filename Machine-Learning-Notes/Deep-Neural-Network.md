@@ -1,8 +1,13 @@
 # Defining a Model with Hidden Layers
 
+# imported pandas library to read the data from a CSV file
+
 1. import pandas as pd
    concrete = pd.read_csv('../input/dl-course-data/concrete.csv')
-   concrete.head()
+
+# Display the data
+
+concrete.head()
 
 # This is the imported libraries
 
@@ -39,3 +44,6 @@ layers.Dense(32, input_shape=[8]),
 layers.Activation("relu"),
 layers.Dense(1)
 ])
+
+⚖️ Normalization:
+Normalization is a technique to standardize input or activations so that the neural network trains faster and more reliably.
