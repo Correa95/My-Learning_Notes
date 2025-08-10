@@ -5,6 +5,14 @@ Optimization in neural networks is the process of adjusting the model's paramete
 ⚙️ What Is an Optimization Method?
 An optimization method (or optimizer) is an algorithm that updates the parameters of the neural network during training to reduce the loss. It uses gradients computed via backpropagation to guide these updates.
 
+# This is the job of the optimizer. The optimizer is an algorithm that adjusts the weights to minimize the loss.
+
+Virtually all of the optimization algorithms used in deep learning belong to a family called stochastic gradient descent. They are iterative algorithms that train a network in steps. One step of training goes like this:
+
+- Sample some training data and run it through the network to make predictions.
+- Measure the loss between the predictions and the true values.
+- Finally, adjust the weights in a direction that makes the loss smaller.
+
 🔑 Key Concepts:
 
 - Loss Function: Measures prediction error (e.g., Mean Squared Error, Cross-Entropy).
