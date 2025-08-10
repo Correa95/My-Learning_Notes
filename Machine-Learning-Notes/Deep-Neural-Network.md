@@ -1,4 +1,4 @@
-# Defining a Model with Hidden Layers
+<!-- # Defining a Model with Hidden Layers
 
 # imported pandas library to read the data from a CSV file
 
@@ -111,4 +111,4 @@ Input layer (raw data)
 
 Hidden layers (extract patterns)
 
-Output layer (gives prediction/class)
+Output layer (gives prediction/class) -->
