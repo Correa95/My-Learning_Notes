@@ -57,7 +57,6 @@ You can layer multiple methods to reinforce generalization. Here’s a smart com
 - Prevents over-training even if dropout is moderate.
   early_stop = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
 
-
 🔄 Combo 3: Batch Normalization + Dropout
 
 - BatchNorm stabilizes learning and reduces internal covariate shift.
