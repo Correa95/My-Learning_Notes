@@ -36,3 +36,11 @@ Optimization Setup:
 - Backpropagation calculates gradients.
 - Adam optimizer updates weights using gradients and internal moment estimates.
 - Repeat for multiple epochs until loss converges.
+
+🚀 Common Optimization Algorithms
+| Optimizer | Description | Use Case Example |
+| SGD | Stochastic Gradient Descent; updates weights using one or few samples | Simple image classification |
+| Adam | Adaptive Moment Estimation; combines momentum and adaptive learning rates | NLP tasks, deep CNNs |
+| RMSprop | Scales learning rate based on recent gradients | Recurrent Neural Networks |
+| Adagrad | Adapts learning rate for each parameter based on past gradients | Sparse data problems |
+| AdamW | Variant of Adam with better weight decay handling | Transformer-based models |
