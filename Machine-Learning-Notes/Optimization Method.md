@@ -13,6 +13,8 @@ Virtually all of the optimization algorithms used in deep learning belong to a f
 - Measure the loss between the predictions and the true values.
 - Finally, adjust the weights in a direction that makes the loss smaller.
 
+# Each iteration's sample of training data is called a minibatch (or often just "batch"), while a complete round of the training data is called an epoch. The number of epochs you train for is how many times the network will see each training example
+
 🔑 Key Concepts:
 
 - Loss Function: Measures prediction error (e.g., Mean Squared Error, Cross-Entropy).
