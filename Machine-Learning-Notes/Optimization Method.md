@@ -36,5 +36,3 @@ Optimization Setup:
 - Backpropagation calculates gradients.
 - Adam optimizer updates weights using gradients and internal moment estimates.
 - Repeat for multiple epochs until loss converges.
-
-Would you like to dive deeper into how Adam works under the hood or explore optimization strategies for specific architectures like transformers or GANs?
