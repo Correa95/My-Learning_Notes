@@ -111,4 +111,4 @@ Input layer (raw data)
 
 Hidden layers (extract patterns)
 
-<!-- Output layer (gives prediction/class) -->
+Output layer (gives prediction/class)
