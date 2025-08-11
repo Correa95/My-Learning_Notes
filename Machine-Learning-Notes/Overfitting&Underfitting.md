@@ -64,3 +64,26 @@ model.compile(
 optimizer='adam',
 loss='mae',
 )
+
+# After defining the callback, add it as an argument in fit (you can have several, so put it in a list). Choose a large number of epochs when using early stopping, more than you'll need.
+
+# Training the model
+
+history = model.fit(
+X_train, y_train,
+validation_data=(X_valid, y_valid),
+batch_size=256,
+epochs=500,
+callbacks=[early_stopping], # put your callbacks in a list
+verbose=0, # turn off training log
+)
+
+# Plotting the Graph
+
+history_df = pd.DataFrame(history.history)
+history_df.loc[:, ['loss', 'val_loss']].plot();
+print("Minimum validation loss: {}".format(history_df['val_loss'].min()))
+
+# Results
+
+Minimum validation loss: 0.09269220381975174
