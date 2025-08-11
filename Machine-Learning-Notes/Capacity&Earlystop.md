@@ -42,3 +42,25 @@ patience=20, # how many epochs to wait before stopping
 restore_best_weights=True,
 )
 These parameters say: "If there hasn't been at least an improvement of 0.001 in the validation loss over the previous 20 epochs, then stop the training and keep the best model you found." It can sometimes be hard to tell if the validation loss is rising due to overfitting or just due to random batch variation. The parameters allow us to set some allowances around when to stop.
+
+# Now let's increase the capacity of the network. We'll go for a fairly large network, but rely on the callback to halt the training once the validation loss shows signs of increasing.
+
+from tensorflow import keras
+from tensorflow.keras import layers, callbacks
+
+early_stopping = callbacks.EarlyStopping(
+min_delta=0.001, # minimium amount of change to count as an improvement
+patience=20, # how many epochs to wait before stopping
+restore_best_weights=True,
+)
+
+model = keras.Sequential([
+layers.Dense(512, activation='relu', input_shape=[11]),
+layers.Dense(512, activation='relu'),
+layers.Dense(512, activation='relu'),
+layers.Dense(1),
+])
+model.compile(
+optimizer='adam',
+loss='mae',
+)
