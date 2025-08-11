@@ -32,3 +32,13 @@ Training with early stopping also means we're in less danger of stopping the tra
 # Adding Early Stopping
 
 In Keras, we include early stopping in our training through a callback. A callback is just a function you want run every so often while the network trains. The early stopping callback will run after every epoch. (Keras has a variety of useful callbacks pre-defined, but you can define your own, too.)
+
+# Early Stop Sample Code
+
+from tensorflow.keras.callbacks import EarlyStopping
+early_stopping = EarlyStopping(
+min_delta=0.001, # minimium amount of change to count as an improvement
+patience=20, # how many epochs to wait before stopping
+restore_best_weights=True,
+)
+These parameters say: "If there hasn't been at least an improvement of 0.001 in the validation loss over the previous 20 epochs, then stop the training and keep the best model you found." It can sometimes be hard to tell if the validation loss is rising due to overfitting or just due to random batch variation. The parameters allow us to set some allowances around when to stop.
