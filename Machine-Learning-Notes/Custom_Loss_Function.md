@@ -19,7 +19,7 @@ Huber Class Function
     If the error is large (≥1), it switches to linear loss (less sensitive to outliers).
     tf.where(condition, A, B) chooses between A and B element-wise.
 
-# Huber Loss Function With Specify threshold
+# Huber loss function with a custom threshold.
 
 # def create_huber(threshold=1.0):
 
