@@ -20,7 +20,7 @@ Virtually all of the optimization algorithms used in deep learning belong to a f
 - Loss Function: Measures prediction error (e.g., Mean Squared Error, Cross-Entropy).
 - Gradient Descent: Core algorithm that moves parameters in the direction of steepest descent of the loss.
 - Learning Rate: Controls the size of each update step.
-<!-- - Momentum: Helps accelerate updates in consistent directions and dampens oscillations. -->
+- Momentum: Helps accelerate updates in consistent directions and dampens oscillations.
 - Regularization: Techniques like L2 penalty to prevent overfitting.
 
 🚀 Common Optimization Algorithms
