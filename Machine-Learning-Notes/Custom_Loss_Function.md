@@ -59,4 +59,8 @@ Huber Class Function
     Then it calculates:
         0.5 * quadratic² + threshold * linear
 
+# loss_fn = create_huber(threshold=1.5)
+
+# model.compile(optimizer="adam", loss=loss_fn)
+
 which is mathematically equivalent to the classic Huber definition.

@@ -1,4 +1,4 @@
-# Capacity
+<!-- # Capacity
 
 A model's capacity refers to the size and complexity of the patterns it is able to learn. For neural networks, this will largely be determined by how many neurons it has and how they are connected together. If it appears that your network is underfitting the data, you should try increasing its capacity.
 
@@ -86,4 +86,4 @@ print("Minimum validation loss: {}".format(history_df['val_loss'].min()))
 
 # Results
 
-Minimum validation loss: 0.09269220381975174
+Minimum validation loss: 0.09269220381975174 -->
