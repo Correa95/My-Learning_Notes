@@ -19,10 +19,9 @@ layers.Dense(16, activation='relu'),
 layers.BatchNormalization(),
 ... or between a layer and its activation function:
 
-<!--
 layers.Dense(16),
 layers.BatchNormalization(),
-layers.Activation('relu'), -->
+layers.Activation('relu'),
 
 And if you add it as the first layer of your network it can act as a kind of adaptive preprocessor, standing in for something like Sci-Kit Learn's StandardScaler.
 
